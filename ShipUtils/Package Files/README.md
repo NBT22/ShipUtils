@@ -1,4 +1,4 @@
-﻿[![Qodana](https://github.com/NBT22/ShipUtils/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/NBT22/ShipUtils/actions/workflows/qodana_code_quality.yml)
+[![Qodana](https://github.com/NBT22/ShipUtils/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/NBT22/ShipUtils/actions/workflows/qodana_code_quality.yml)
 # Ship Utils
 A fairly simple mod that implements some quality of life features for the person who stays on ship.
 
