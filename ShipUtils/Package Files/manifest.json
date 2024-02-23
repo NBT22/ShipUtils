@@ -1,7 +1,7 @@
 {
     "name":  "Ship_Utils",
     "version_number":  "1.0.0",
-    "website_url":  "",
+    "website_url":  "https://github.com/NBT22/ShipUtils",
     "description":  "A fairly simple mod that implements some quality of life features for the person who stays on ship. Currently implements quick switching radar and teleport with keybindings.",
     "dependencies":  [
                          "Rune580-LethalCompany_InputUtils-0.6.3"
