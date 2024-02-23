@@ -6,7 +6,7 @@
                            null
                        ],
     "website_url":  "",
-    "description":  "This is a description for a mod. 250 characters max",
+    "description":  "A fairly simple mod that implements some quality of life features for the person who stays on ship. Currently implements quick switching radar and teleport with keybindings.",
     "dependencies":  [
                          "Rune580-LethalCompany_InputUtils-0.6.3"
                      ]
