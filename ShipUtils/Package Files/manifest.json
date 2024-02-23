@@ -1,0 +1,13 @@
+{
+    "name":  "Ship_Utils",
+    "version_number":  [
+                           "1.0.0",
+                           null,
+                           null
+                       ],
+    "website_url":  "",
+    "description":  "This is a description for a mod. 250 characters max",
+    "dependencies":  [
+                         "Rune580-LethalCompany_InputUtils-0.6.3"
+                     ]
+}

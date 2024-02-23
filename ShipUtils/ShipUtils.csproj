@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<AssemblyName>ShipUtils</AssemblyName>
+		<Description>My first plugin</Description>
+		<Version>1.0.0</Version>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>latest</LangVersion>
+		<Configurations>Debug;Release</Configurations>
+		<RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+		<PostBuildEvent>if $(Configuration) == Debug call ../../../run.bat
+if $(Configuration) == Release call ../../../package.bat</PostBuildEvent>
+		<PackageId>$(Configuratioan)</PackageId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <DebugType>embedded</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.Core" Version="5.*" />
+		<PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+		<PackageReference Include="UnityEngine.Modules" Version="2023.2.9" IncludeAssets="compile" />
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" />
+	</ItemGroup>
+    <ItemGroup>
+	    <Reference Include="Assembly-CSharp" HintPath="D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Assembly-CSharp.dll" Publicize="true" />
+		<Reference Include="InputUtils" HintPath="D:\SteamLibrary\steamapps\common\Lethal Company\BepInEx\plugins\Rune580-LethalCompany_InputUtils\LethalCompanyInputUtils\LethalCompanyInputUtils.dll" />
+		<Reference Include="Unity.InputSystem" HintPath="D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.InputSystem.dll" />
+		<Reference Include="Unity.Netcode.Runtime" HintPath="D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll" />
+		<Reference Include="Unity.TextMeshPro" HintPath="D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.TextMeshPro.dll" />
+		<Reference Include="UnityEngine.UI" HintPath="D:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\UnityEngine.UI.dll" />
+	</ItemGroup>
+  
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+	</ItemGroup>
+	
+</Project>
