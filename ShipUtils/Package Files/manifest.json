@@ -1,10 +1,6 @@
 {
     "name":  "Ship_Utils",
-    "version_number":  [
-                           "1.0.0",
-                           null,
-                           null
-                       ],
+    "version_number":  "1.0.0",
     "website_url":  "",
     "description":  "A fairly simple mod that implements some quality of life features for the person who stays on ship. Currently implements quick switching radar and teleport with keybindings.",
     "dependencies":  [
