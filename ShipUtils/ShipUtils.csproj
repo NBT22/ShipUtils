@@ -12,6 +12,10 @@
 		<PostBuildEvent>if $(Configuration) == Debug call ../../../run.bat
 if $(Configuration) == Release call ../../../package.bat</PostBuildEvent>
 		<PackageId>$(Configuratioan)</PackageId>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<AssemblyVersion>$(Version).0</AssemblyVersion>
+		<FileVersion>$(Version).0</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -41,5 +45,18 @@ if $(Configuration) == Release call ../../../package.bat</PostBuildEvent>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
 	</ItemGroup>
+  
+	<ItemGroup>
+	  <None Update="Package Files\icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="Package Files\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+  
+	<ProjectExtensions><VisualStudio><UserProperties package_x0020_files_4manifest_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 	
 </Project>

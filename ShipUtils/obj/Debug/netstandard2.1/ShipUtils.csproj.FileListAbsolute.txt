@@ -46,4 +46,3 @@ C:\Users\Noah\source\repos\ShipUtils\ShipUtils\obj\Debug\netstandard2.1\ShipUtil
 C:\Users\Noah\source\repos\ShipUtils\ShipUtils\obj\Debug\netstandard2.1\ShipUtils.csproj.CoreCompileInputs.cache
 C:\Users\Noah\source\repos\ShipUtils\ShipUtils\obj\Debug\netstandard2.1\ShipUtils.csproj.CopyComplete
 C:\Users\Noah\source\repos\ShipUtils\ShipUtils\obj\Debug\netstandard2.1\ShipUtils.dll
-C:\Users\Noah\source\repos\ShipUtils\ShipUtils\obj\Debug\netstandard2.1\ShipUtils.sourcelink.json

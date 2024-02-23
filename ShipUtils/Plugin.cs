@@ -8,6 +8,7 @@ using JetBrains.Annotations;
 using LethalCompanyInputUtils.Api;
 using UnityEngine;
 using UnityEngine.InputSystem;
+// ReSharper disable UseCollectionExpression
 
 namespace ShipUtils;
 
@@ -39,7 +40,7 @@ public class Plugin : BaseUnityPlugin
         {
             if (_allTargets)
             {
-                _targets = [_target];
+                _targets = new List<int>();
                 _allTargets = false;
             }
             else
